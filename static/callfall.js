@@ -1,5 +1,4 @@
 
-
 function showLoader() {
     setTimeout(() => {
       document.getElementById("loader").style.display = "none";
@@ -29,20 +28,4 @@ function showLoader() {
 
   updateBattery();
 
-  // Toggle sidebar visibility and blur effect
-  function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const hamburger = document.querySelector(".hamburger");
-    const content = document.querySelector(".content");
-  
-    sidebar.classList.toggle("closed");
-    hamburger.classList.toggle("open");
-  
-    // Add/remove blur when sidebar opens/closes
-    if (sidebar.classList.contains("closed")) {
-      content.classList.remove("blur");
-    } else {
-      content.classList.add("blur");
-    }
-  }
-  
+
