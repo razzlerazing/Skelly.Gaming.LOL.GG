@@ -20,20 +20,23 @@ html, body {
     animation: gradientAnimation 10s linear infinite;
   }
   
-   #particles-js { width: 100%; height: 100%; }
-        .container {
-            max-width: 800px;
-            margin: 150px auto 0 auto;
-            padding: 20px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.75);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            border: 2px solid transparent;
-            position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-background-color: gray;
-        }
+   @keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #ff007f, black);
+  }
+  25% {
+    background: linear-gradient(45deg, #00ff7f, #ff7f00);
+  }
+  50% {
+    background: linear-gradient(45deg, yellow, blue);
+  }
+  75% {
+    background: linear-gradient(45deg, red, white);
+  }
+  100% {
+    background: linear-gradient(45deg, green, red);
+  }
+}
   h1, h2, h3 {
     margin-bottom: 30px; /* Increase space below headers */
     line-height: 1.5;

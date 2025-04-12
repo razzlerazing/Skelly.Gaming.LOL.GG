@@ -15,7 +15,7 @@ if (
   setTimeout(() => {
     if (!popup || popup.closed) {
       alert(
-        "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
+        "So, if you allow pop-ups for this site, you get about:blank cloaking, which removes it from ur history, just remember not to select dynamic proxy when this is a:b cloaked!",
       );
     } else {
       const doc = popup.document;

@@ -29,19 +29,19 @@ body::-webkit-scrollbar {
 
 @keyframes gradientAnimation {
   0% {
-    background: linear-gradient(45deg, #ff007f, #00ff7f);
+    background: linear-gradient(45deg, #ff007f, black);
   }
   25% {
-    background: linear-gradient(45deg, #00ff7f, #007fff);
+    background: linear-gradient(45deg, #00ff7f, #ff7f00);
   }
   50% {
-    background: linear-gradient(45deg, #007fff, #ff7f00);
+    background: linear-gradient(45deg, yellow, blue);
   }
   75% {
-    background: linear-gradient(45deg, #ff7f00, #ff00ff);
+    background: linear-gradient(45deg, red, white);
   }
   100% {
-    background: linear-gradient(45deg, #ff00ff, #ff007f);
+    background: linear-gradient(45deg, green, red);
   }
 }
 .container {

@@ -8,7 +8,7 @@
   function showLoader() {
     setTimeout(() => {
       document.getElementById("loader").style.display = "none";
-    }, 2000);
+    }, 1000);
   }
 
   // Update the time every 10ms
