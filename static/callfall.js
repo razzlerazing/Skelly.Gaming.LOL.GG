@@ -12,7 +12,7 @@ try {
 function showLoader() {
   setTimeout(() => {
     document.getElementById("loader").style.display = "none";
-  }, 1000);
+  }, 300);
 }
 
 // Update the time every 10ms

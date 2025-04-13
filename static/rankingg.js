@@ -13,7 +13,7 @@
    function showLoader() {
     setTimeout(() => {
       document.getElementById("loader").style.display = "none";
-    }, 2500); // Loader stays for 3 seconds
+    }, 1000); // Loader stays for 3 seconds
   }
   // Show loader for a fixed time 
   function showLoader() {

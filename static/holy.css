@@ -200,10 +200,16 @@ h1 {
   font-size: 36px;
   margin-bottom: 20px; /* Adds space below h1 */
 }
+h1:hover {
+  transform: scale(1.05)
+}
 h2 {
   font-size: 20px;
   line-height: 1.5; /* Increases spacing between lines */
   margin-top: 10px; /* Adds space above h2 */
+}
+h2:hover {
+  transform: scale(1.05)
 }
 .highlight2 {
   background: linear-gradient(0deg, #FF0000, #0000FF);
