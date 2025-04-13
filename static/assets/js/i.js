@@ -7,10 +7,10 @@ window.addEventListener("load", () => {
 let xl;
 
 try {
-  xl = window.top.location.pathname === "/rx";
+  xl = window.top.location.pathname === "/proxy";
 } catch {
   try {
-    xl = window.parent.location.pathname === "/rx";   
+    xl = window.parent.location.pathname === "/proxy";   
   } catch {
     xl = false;
   }
@@ -24,9 +24,9 @@ if (form && input) {
     event.preventDefault();
     try {
       if (xl) processUrl(input.value, "");
-      else processUrl(input.value, "/rx");
+      else processUrl(input.value, "/proxy");
     } catch {
-      processUrl(input.value, "/rx");
+      processUrl(input.value, "/proxy");
     }
   });
 }
@@ -54,7 +54,7 @@ function processUrl(value, path) {
 }
 
 function go(value) {
-  processUrl(value, "/rx");
+  processUrl(value, "/proxy");
 }
 
 function blank(value) {

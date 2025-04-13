@@ -1,10 +1,10 @@
 let qp;
 
 try {
-  qp = window.top.location.pathname === "/rx";
+  qp = window.top.location.pathname === "/proxy";
 } catch {
   try {
-    qp = window.parent.location.pathname === "/rx";   
+    qp = window.parent.location.pathname === "/proxy";   
   } catch {
     qp = false;
   }

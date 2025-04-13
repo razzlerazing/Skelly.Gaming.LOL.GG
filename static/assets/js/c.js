@@ -6,10 +6,10 @@ const c = window.location.pathname === "/gt";
 let t;
 
 try {
-  t = window.top.location.pathname === "/rx";
+  t = window.top.location.pathname === "/proxy";
 } catch {
   try {
-    t = window.parent.location.pathname === "/rx";   
+    t = window.parent.location.pathname === "/proxy";   
   } catch {
     t = false;
   }
@@ -42,7 +42,7 @@ function handleClick(app) {
 
   if (app.local) {
     saveToLocal(Selected);
-    window.location.href = "rx";
+    window.location.href = "/proxy";
     if (t) {
       window.location.href = Selected;
     }

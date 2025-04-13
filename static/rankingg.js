@@ -1,3 +1,14 @@
+   let qp;
+
+   try {
+     qp = window.top.location.pathname === "/games";
+   } catch {
+     try {
+       qp = window.parent.location.pathname === "/games";
+     } catch {
+       qp = false;
+     }
+   }
    // Show loader for a fixed time
    function showLoader() {
     setTimeout(() => {
@@ -47,3 +58,4 @@
     // Toggle blur on content when sidebar is open
     content.classList.toggle("blur", !sidebar.classList.contains("closed"));
   }
+  

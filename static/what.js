@@ -1,10 +1,10 @@
 let qp;
 
 try {
-  qp = window.top.location.pathname === "/home";
+  qp = window.top.location.pathname === "/settings";
 } catch {
   try {
-    qp = window.parent.location.pathname === "/home";
+    qp = window.parent.location.pathname === "/settings";
   } catch {
     qp = false;
   }

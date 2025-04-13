@@ -9,18 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/holy.css">
 </head>
-<nav class="top-nav">
-  <div class="logo"><a href="/index.html">SKG</div>
-  <ul>
-    <li><a href="/Gamess.html">Games</a></li>
-    <li><a href="/proxy.html" target="_blank">Unblocker</a></li>
-    <li><a href="/anxme.html" target="_blank">Anime</a></li>
-    <li><a href="/movies.html" target="_blank">Movies</a></li>
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/tabs.html">Tabs</a></li>
-    <li><a href="/settings.html">Settings</a></li>
-  </ul>
-</nav>
+    <nav class="top-nav">
+      <div class="logo"><a href="/home">SKG</div>
+      <ul>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/unblocker" target="_blank">Unblocker</a></li>
+        <li><a href="/anxme.html" target="_blank">Anime</a></li>
+        <li><a href="/movies.html" target="_blank">Movies</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/proxy">Tabs</a></li>
+        <li><a href="/settings">Settings</a></li>
+      </ul>
+    </nav>
 <!-- Content Section -->
 <div class="content">
   <div class="container">
@@ -31,7 +31,7 @@
       <a href="/index.html" class="proxy-button">Home Page</a>
     </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="/callfall.js"></script>
+    
           <script>
 
             particlesJS('particles-js', {
@@ -45,6 +45,36 @@
                 move: { enable: true, speed: 1 }
               }
             });
+            
+              function showLoader() {
+                setTimeout(() => {
+                  document.getElementById("loader").style.display = "none";
+                }, 1000);
+              }
+
+              // Update the time every 10ms
+              function updateTime() {
+                const timeElement = document.getElementById("time");
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, "0");
+                const minutes = String(now.getMinutes()).padStart(2, "0");
+                const seconds = String(now.getSeconds()).padStart(2, "0");
+                const milliseconds = String(now.getMilliseconds()).padStart(3, "0");
+                timeElement.textContent = `${hours}:${minutes}:${seconds}.${milliseconds}`;
+              }
+
+              setInterval(updateTime, 10);
+
+              // Update battery status
+              async function updateBattery() {
+                const battery = await navigator.getBattery();
+                const level = Math.floor(battery.level * 100);
+                document.getElementById("battery-percentage").textContent = `${level}%`;
+                document.getElementById("battery-fill").style.width = `${level}%`;
+              }
+
+              updateBattery();
+
           </script>
     </body>
 
