@@ -3,89 +3,58 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Destiny Rise Gaming</title>
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <link rel="shortcut icon" id="tab-favicon" href="favicon.png" />
+    <title id="t">Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="holy.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/global.css?v=6" />
+    <link rel="stylesheet" href="/assets/css/container.css?v=2" />
+    <link rel="stylesheet" href="/assets/css/nav.css?v=01" />
+    <script src="/assets/js/i.js?v=03"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6840529569014734"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body onload="showLoader()">
-
     <!-- Loader -->
     <div id="loader">
         <h1><span class="highlight">SKELLY</span>💀</h1>
         <p><span class="highlight2">Hanging Extension, please wait...</span></p>
         <div class="loader"></div>
     </div>
-
-    <!-- Sidebar -->
-    <nav class="top-nav">
-        <div class="logo"><a href="/home">SKG</a></div>
-        <ul>
-            <li><a href="/games">Games</a></li>
-            <li><a href="/unblocker" target="_blank">Unblocker</a></li>
-            <li><a href="/anxme.html" target="_blank">Anime</a></li>
-            <li><a href="/movies.html" target="_blank">Movies</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/proxy">Tabs</a></li>
-            <li><a href="/settings">Settings</a></li>
-        </ul>
-    </nav>
-
-    <!-- Content Section -->
-    <div class="content">
-        <div class="container">
-            <h1><span class="highlight">GAMES</span>💀</h1>
-            <h2><span class="highlight2">Play your favorite games here & now!</span></h2>
-
-            <div class="proxy-buttons-container" id="proxy-buttons-container">
-
-
-
-            </div>
-
-            <!-- Time and Battery Section -->
-            <div class="time" id="time">If diddy chases u, ur cooked (wait for time to load)</div>
-            <div class="battery" id="battery">
-                <div class="battery-icon">
-                    <div class="battery-fill" id="battery-fill"></div>
-                </div>
-                <span id="battery-percentage">If diddy chases u, ur cooked (wait for battery to load)</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCRIPTS -->
-    <script src="rankingg.js"></script>
+<nav class="top-nav">
+    <div class="logo"><a href="/home">SKG</a></div>
+    <ul>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/unblocker" target="_blank">Unblocker</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/proxy">Tabs</a></li>
+    </ul>
+</nav>
+    <div class="pinned"></div>
+    <div class="apps"></div>
+    <script src="/callfall.js"></script>
+    <script src="/assets/js/c.js?v=06"></script>
+    <script src="./assets/ultra/bundle.js?v=10-02-2024"></script>
+    <script src="./assets/ultra/config.js?v=10-02-2024"></script>
+    <script src="assets/js/f.js"></script>
+    <script src="/assets/js/mv.js?v=003"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
+    <!-- DO NOT REMOVE-->
     <script>
-   const games = [
-  { name: "1v1.lol", url: "https://1v1.lol" },
-  { name: "Slope", url: "https://slope-game.github.io/slope/" },
-  { name: "Tunnel Rush", url: "https://tunnelrush.github.io/" },
-  { name: "Minecraft Classic", url: "https://classic.minecraft.net" },
-  { name: "Retro Bowl", url: "https://retrobowlapp.github.io/game" },
-  // Add more games as needed
-];
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-window.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("proxy-buttons-container");
-  games.forEach(game => {
-    // Create the encoded URL for the proxy service
-    const encodedUrl = encodeURIComponent(game.url);  // This encodes the URL (same as Interstellar)
-    const fullUrl = "/proxy/service/" + encodedUrl;  // Prefix with your proxy path
-
-    // Create an anchor tag for each game
-    const a = document.createElement("a");
-    a.href = fullUrl;         // Set the href to the proxy service URL
-    a.target = "_blank";      // Open the game in a new tab
-    a.className = "proxy-button"; // Add styling class
-    a.textContent = game.name;   // Display the game's name as the link text
-    
-    // Append the link to the container
-    container.appendChild(a);
-  });
-});
+        gtag("config", "G-WKJQ5QHQTJ");
     </script>
+    <!-- DO NOT REMOVE-->
 </body>
 
 </html>

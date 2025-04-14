@@ -2,7 +2,7 @@
    width: 145px;
    transition: all 0.2s ease;
    cursor: pointer;
-   background: var(--background-column);
+   background-color: black;
    border-radius: 5px;
    padding-left: 10px;
    padding-right: 10px;
@@ -24,7 +24,7 @@
    height: 19px;
    font-style: normal;
    font-weight: 800;
-   font-size: 18px;
+   font-size: 15px;
    line-height: 19px;
    text-align: center;
    color: var(--text-primary);
@@ -34,7 +34,7 @@
 }
 
 .column:hover {
-   transform: scale(1.2);
+    transform: translateY(-5%);
 }
 
 .column:hover .label {

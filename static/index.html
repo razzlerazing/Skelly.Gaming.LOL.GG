@@ -8,6 +8,7 @@
   <title>Dashboard | Khan Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/holy.css" />
+    <link rel="stylesheet" href="/assets/css/settings.css?v=06" />
 </head>
 
 <body onload="showLoader()">
@@ -23,11 +24,8 @@
     <ul>
       <li><a href="/games">Games</a></li>
       <li><a href="/unblocker" target="_blank">Unblocker</a></li>
-      <li><a href="/anxme.html" target="_blank">Anime</a></li>
-      <li><a href="/movies.html" target="_blank">Movies</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/proxy">Tabs</a></li>
-      <li><a href="/settings">Settings</a></li>
     </ul>
   </nav>
   
@@ -35,22 +33,44 @@
   <div class="content">
     <div class="container">
       <h1><span class="highlight">SKELLY GAMING</span>💀</h1>
-      <h2><span class="highlight2">Proxy is now ready!</span></h2>
+      <h2><span class="highlight2">Originated by <i>DeepTheReep</i>, (aka @razzlerazing)</span></h2>
 
       <div class="search-container">
         <form id="fv" method="POST">
-          <input id="iv" class="search-home" placeholder="Search or enter a URL" type="text" />
+          <input id="iv" class="search-home" placeholder="Enter search or web address" type="text" />
         </form>
       </div>
 
       <!-- Time and Battery Section -->
-      <div class="time" id="time">If diddy chases u, ur cooked (wait for time to load)</div>
-      <div class="battery" id="battery">
-        <div class="battery-icon">
-          <div class="battery-fill" id="battery-fill"></div>
+  <div class="settings-container">
+    <div class="settings-card">
+      <h3><span class="highlight">About:Blank</span></h3>
+      <p>
+        Cloak the site in an about:blank page to hide it from your history, pros: you won't get caught, cons: dynamic won't work
+      </p>
+      <div id="ab-settings">
+        <div id="ab-settings-container">
+          <label class="switch">
+            <input type="checkbox" id="ab-settings-switch" class="slider-checkbox" onchange="toggleAB()" />
+            <span class="slider-round"></span>
+          </label>
         </div>
-        <span id="battery-percentage">If diddy chases u, ur cooked (wait for battery to load)</span>
+        <button onclick="AB()" class="key-button">Open Popup</button>
       </div>
+    </div>
+  
+  
+  
+    <div class="settings-card">
+      <h3><span class="highlight">Choose your <an>Pro</an>xy</span></h3>
+      <p>
+        Ultraviolet is ideal for using tabs, while Dynamic is ideal for speed and that it supports more sites than Ultraviolet
+      </p>
+      <select id="pChange">
+        <option value="uv">Ultra<an>vio</an>let</option>
+        <option value="dy">Dynamic</option>
+      </select>
+    </div>
     </div>
   </div>
 
@@ -61,6 +81,9 @@
     <script src="./assets/ultra/config.js?v=10-02-2024"></script>
     <script src="assets/js/f.js"></script>
     <script src="/assets/js/mv.js?v=003"></script>
+      <script src="/what.js"></script>
+      <script src="/assets/js/m.js?v=08"></script>
+      <script src="/assets/js/settings.js?v=010"></script>
     <!-- DO NOT REMOVE-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
     <script>

@@ -24,7 +24,7 @@ const CACHE_TTL = 30 * 24 * 60 * 60 * 1000; // Cache for 30 Days
 
 if (config.challenge !== false) {
   console.log(
-    chalk.green("🔒 Password protection is enabled! Listing logins below"),
+    chalk.green("🔒 Password protection is enabled! Listing logins below")
   );
   // biome-ignore lint/complexity/noForEach:
   Object.entries(config.users).forEach(([username, password]) => {
@@ -108,7 +108,7 @@ const routes = [
 ];
 
 // biome-ignore lint/complexity/noForEach:
-routes.forEach(route => {
+routes.forEach((route) => {
   app.get(route.path, (_req, res) => {
     res.sendFile(path.join(__dirname, "static", route.file));
   });

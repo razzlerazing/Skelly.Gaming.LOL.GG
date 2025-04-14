@@ -191,7 +191,7 @@ p {
 #add-tab {
    padding: 0.5rem;
    cursor: pointer;
-   background-color: var(--background-settings);
+   background-color: black;
    color: var(--text-primary);
    border: none;
    border-radius: 5px;
@@ -200,7 +200,7 @@ p {
 }
 
 #add-tab:hover {
-   background-color: var(--tab-active-background);
+   transform: scale(1.1)
 }
 
 ul {
